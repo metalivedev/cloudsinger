@@ -7,11 +7,10 @@ This code shows how use [Twilio](http://twilio.com/) with
 Sinatra provides a clean, classy DSL for doing simple applications and
 Twilio provides an __AWESOME__ REST API for doing cloud telephony. This
 demo just scratches the surface of what you can do with Twilio (and
-DotCloud really).
+dotCloud really).
 
-To run this code on DotCloud, you need to [get a DotCloud
-account](https://www.dotcloud.com/accounts/register/). DotCloud has a
-free tier, so you won't even need to draw your wallet!
+To run this code on dotCloud, you need to [get a dotCloud
+account](https://www.dotcloud.com/accounts/register/).
 
 Then clone this repository:
 
@@ -20,7 +19,8 @@ Then clone this repository:
 And push it to DotCloud:
 
     $ cd cloudsinger
-    $ dotcloud push cloudsinger
+    $ dotcloud create -f live cloudsinger
+    $ dotcloud push
 
 Happy hacking! Remember: each time you modify something, you need to
 git add + git commit your changes before doing `dotcloud push`.
@@ -33,6 +33,6 @@ If you want to see how this sample app was built, we invite you to:
   click on each individual commit to see detailed explanations for each step
 * if you prefer text mode (or offline inspection), fallback on
   `git log --patch --reverse`
-* dive into [DotCloud documentation](http://docs.dotcloud.com/), especially
+* dive into [dotCloud documentation](http://docs.dotcloud.com/), especially
   the one for the [Ruby service](http://docs.dotcloud.com/services/ruby/)
   which is used by this app.
